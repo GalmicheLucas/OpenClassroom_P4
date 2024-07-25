@@ -3,7 +3,7 @@
   padding: 22px 25px;
   background-color: #353535;
 
-   @media all and (min-width: 768px) {
+  @media all and (min-width: 768px) {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -19,14 +19,17 @@
     font-size: 18px;
   }
 
-  & p {
+  p {
     margin: 5px 0;
   }
 
-  &__logo {
+  li {
+    color: white;
+  }
+
+  &_logo {
     margin: 0 0 16px 0;
-    /*@include cursive__logo;
-    font-size: 18px;*/
+    font-size: 18px;
     @media all and (min-width: 1024px) {
       width: 137px;
       margin: 0;
@@ -37,7 +40,7 @@
     display: flex;
     flex-direction: column;
 
-      @media all and (min-width: 1024px) {
+    @media all and (min-width: 1024px) {
       flex-direction: row;
       align-items: center;
       gap: 7px;
@@ -50,11 +53,11 @@
     font-weight: 500 map-get;
     gap: 7px;
 
-     @media all and (min-width: 1024px) {
+    @media all and (min-width: 1024px) {
       width: 190px;
     }
 
-    &--icons {
+    &_icon {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -64,7 +67,7 @@
     }
 
     &--info {
-        @media all and (min-width: 768px) {
+      @media all and (min-width: 768px) {
         & p {
           width: 130px;
           height: 20px;
