@@ -21,14 +21,17 @@ a {
 .header {
   padding: 2%;
 }
-.header__logo {
+.header h1 {
+  font-family: shrikhand;
+}
+.header_logo {
   margin: 0;
   text-align: center;
 }
-.header__withorrow {
+.header_withorrow {
   position: relative;
 }
-.header__goback {
+.header_goback {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,15 +285,17 @@ a {
   background-color: white;
   /* @include object-shadow;
   @include desktop__responsive;*/
-  /* &:hover {
-    @include object-shadow(darken($shadow, 10%))
-  }*/
 }
 @media all and (min-width: 768px) {
   .restaurant_cards {
     width: 48%;
     margin: 0;
     margin-bottom: 4%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .restaurant_cards:hover {
+    box-shadow: 0 4px 10px 0 #d5d5d5, 10%;
   }
 }
 .restaurant_cards-img {
