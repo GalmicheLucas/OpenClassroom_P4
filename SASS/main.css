@@ -1,1 +1,37 @@
-/*# sourceMappingURL=main.css.map */
+/* Color */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/**** font weight ****/
+.body {
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  padding: 2%;
+}
+.header__logo {
+  margin: 0;
+  text-align: center;
+}
+.header__withorrow {
+  position: relative;
+}
+.header__goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  top: 35%;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */
