@@ -1,0 +1,24 @@
+/* Color */
+
+$main-color: #9356dc;
+$secondary-color: #ff79da;
+$third-color: #99e2d0;
+$background-color: #f2f2f2;
+$grey: #EAEAEA;
+$white: #ffffff;
+$shadow : #d5d5d5;
+$black: #353535;
+$LightGray: #F6F6F6;
+$icon: #7E7E7E;
+
+/* Gradient */
+$gradient-loader : linear-gradient(to top, lighten($main-color, 10%), $secondary-color, transparent, transparent);
+
+/**** Degree Gradient ****/
+$degree: 357deg;
+
+/**** Responsive ****/
+$breakpoints: (
+    table: 768px,
+    desktop: 1024px,
+);
