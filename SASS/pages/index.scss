@@ -191,10 +191,11 @@
     margin: 0;
     margin-bottom: 4%;
   }
-
-  /* &:hover {
-    @include object-shadow(darken($shadow, 10%))
-  }*/
+  @media all and (min-width: 1024px) {
+    &:hover {
+      box-shadow: 0 4px 10px 0#d5d5d5, 10%;
+    }
+  }
 
   &-img {
     position: relative;
