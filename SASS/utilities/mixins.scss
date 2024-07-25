@@ -1,0 +1,4 @@
+/**** Shadow ****/
+@mixin object-shadow ($color: $shadow) {
+    box-shadow: 0 4px 10px 0 $color;
+}
