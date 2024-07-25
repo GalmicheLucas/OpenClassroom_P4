@@ -117,12 +117,11 @@ a {
 
 .info__location {
   display: flex;
-  height: 50px;
   justify-content: center;
   align-items: center;
-  background-color: #ebebeb;
-  box-shadow: inset 0 10px 8px -5px;
-  gap: 17px;
+  padding: 15px 0;
+  background-color: #dedcdc;
+  gap: 10px;
 }
 
 .info__icon {
