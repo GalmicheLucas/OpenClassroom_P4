@@ -102,9 +102,9 @@
   background-color: darken(LightGray, 0);
   /*@include object-shadow;*/
 
-    @media all and (min-width: 1024px) {
-        width: 30%;
-    }
+  @media all and (min-width: 1024px) {
+    width: 30%;
+  }
 
   &:hover {
     background-color: lighten(#9356dc, 35%);
@@ -165,11 +165,11 @@
     margin: auto;
     /*@include desktop__responsive;*/
 
-    @media all and (min-width: 768px){
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -196,7 +196,7 @@
     @include object-shadow(darken($shadow, 10%))
   }*/
 
-  &--img {
+  &-img {
     position: relative;
     overflow: hidden;
     height: 175px;
@@ -208,7 +208,7 @@
       object-fit: cover;
     }
 
-    &--markerinfo {
+    &-markerinfo {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -223,7 +223,7 @@
     }
   }
 
-  &--info {
+  &-info {
     display: flex;
     align-items: flex-start;
     height: auto;
