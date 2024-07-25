@@ -23,6 +23,12 @@ $gradient-loader: linear-gradient(
 /**** Degree Gradient ****/
 $degree: 357deg;
 
+/**** width ****/
+$whiteMobile: 90%;
+
+/* Loading spinner animation delay */
+$icons-delay: 610ms;
+
 /**** Responsive ****/
 $breakpoints: (
   table: 768px,
