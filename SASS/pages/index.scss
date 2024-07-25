@@ -1,6 +1,28 @@
+$whiteMobile: 90%;
+$main-color: #9356dc;
+$secondary-color: #ff79da;
+$third-color: #99e2d0;
+$background-color: #f2f2f2;
+@mixin desktop__responsive {
+  @media all and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin table__responsive {
+  @media all and (min-width: map-get($breakpoints, table)) {
+    @content;
+  }
+}
+
+/**** Responsive ****/
+$breakpoints: (
+  table: 768px,
+  desktop: 1024px,
+);
 //* Info location *//
 
-.info__location {
+.info_location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,21 +31,16 @@
   gap: 10px;
 }
 
-.info__icon {
+.info_icon {
   display: flex;
   align-items: center;
 }
 
-.info__form {
+.info_form {
   position: relative;
   display: flex;
   align-items: center;
   width: 109px;
-
-  .info__city {
-    border: transparent;
-    background-color: grey;
-  }
 
   .placeholder {
     position: absolute;
@@ -66,7 +83,7 @@
 //* Functioning *//
 
 .functioning {
-  width: white;
+  width: $whiteMobile;
   margin: auto;
   padding: 50px 0;
 
@@ -99,7 +116,7 @@
   border: none;
   gap: 4%;
   background-color: darken(LightGray, 0);
-  /*@include object-shadow;*/
+  box-shadow: 0 4px 10px 0;
 
   @media all and (min-width: 1024px) {
     width: 30%;
@@ -123,9 +140,9 @@
     bottom: -5px;
     height: 24px;
     width: 24px;
-    /*@include circle;*/
+    border-radius: 50%;
     color: white;
-    background-color: "9356dc";
+    background-color: #9356dc;
     padding: 1%;
   }
 
@@ -146,117 +163,115 @@
 }
 
 //* rsetaurant *//
-.restaurant {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 20px 0 66px 0;
-  background-color: LightGray;
+.restaurants {
+  background-color: $background-color;
+  margin-top: 40px;
+  padding: 10px 25px 50px 25px;
 
-  &__title {
-    width: whiteMobile;
-    margin: 20px auto;
-    /*@include title__heading;*/
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
   }
 
-  &__bloc {
-    width: whiteMobile;
-    margin: auto;
-    /*@include desktop__responsive;*/
+  &_card {
+    position: relative;
+    width: 95%;
+    border-radius: 45px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
 
-    @media all and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    &_img {
+      width: 100%;
+      height: 231px;
+      object-fit: cover;
+    }
+    h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    p {
+      margin: 8px 0 0;
+      color: gray;
+    }
+
+    &_content {
+      padding: 30px;
     }
   }
 }
 
-.restaurant_cards {
+.icons {
+  font-size: 65px;
+  width: 75px;
+  height: 130px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
   display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 251px;
-  margin: auto;
-  margin-bottom: 18px;
-  border-radius: 15px;
-  background-color: white;
+  gap: 8px;
 
-  /* @include object-shadow;
-  @include desktop__responsive;*/
-
-  @media all and (min-width: 768px) {
-    width: 48%;
-    margin: 0;
-    margin-bottom: 4%;
-  }
-  @media all and (min-width: 1024px) {
-    &:hover {
-      box-shadow: 0 4px 10px 0#d5d5d5, 10%;
-    }
+  & icons-liked {
+    display: inline-block;
+    opacity: 1;
   }
 
-  &-img {
-    position: relative;
-    overflow: hidden;
-    height: 175px;
-    border-radius: 15px 15px 0px 0px;
-
-    & img {
-      width: 100%;
-      height: 175px;
-      object-fit: cover;
-    }
-
-    &-markerinfo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      right: 15px;
-      top: 12px;
-      width: 80px;
-      height: 30px;
-      border-radius: 2px;
-      background-color: #99e2d0;
-      font-weight: 500 map-get;
-    }
+  & icons-notLiked {
+    display: none;
   }
 
-  &-info {
-    display: flex;
-    align-items: flex-start;
-    height: auto;
-    min-height: 75px;
-    padding: 15px;
-
-    &--text {
-      width: 90%;
-    }
-
-    & h4,
-    p {
-      margin: 0;
-    }
-
-    & h4 {
-      width: 267px;
-      height: 20px;
-      margin-bottom: 5px;
-      font-size: 18px;
-    }
-
-    & p {
-      height: 24px;
-      font-weight: 300;
-      font-size: 17px;
-    }
+  &:hover .icons-liked {
+    opacity: 1;
   }
 
-  &--like {
+  &-notLiked {
     position: absolute;
-    top: 76%;
-    right: 7%;
-    font-size: 25px;
   }
+
+  &-liked {
+    position: relative;
+    background: linear-gradient(
+      160deg,
+      rgba(255, 121, 218, 1) 0%,
+      rgba(147, 86, 220, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 500ms ease-in-out;
+    opacity: 0;
+  }
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 40px;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #4d7052;
+  z-index: 40;
+  background-color: $third-color;
+  animation: new 1600ms ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.img {
+  width: 100%;
 }
