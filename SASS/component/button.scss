@@ -1,15 +1,9 @@
-.hero__btngradient {
-  width: 218px;
-  height: 50px;
+.button {
+  padding: 30px;
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
-  font-size: 16px;
-  border-radius: 25px;
-  border: none;
-  font-weight: 500 map-get;
-  cursor: pointer;
-  margin: 27px 75px 57px 82px;
-  transition: opacity 300ms ease-in-out;
+  border-radius: 50px;
+  box-shadow: 2px 5px 20px rgb(167, 167, 167);
 
   &:hover {
     opacity: 0.88;
