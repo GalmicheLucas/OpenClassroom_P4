@@ -1,15 +1,23 @@
 .footer {
   width: 100%;
   padding: 22px 25px;
-  color: white;
-  /*@include table__responsive {
+  background-color: #353535;
+}
+@media all and (min-width: 768px) {
+  .footer {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: flex-start;
     height: 114px;
     gap: 16px;
-  }*/
+  }
+}
+.footer h2 {
+  font-family: shrikhand;
+  font-weight: lighter;
+  color: white;
+  font-size: 18px;
 }
 .footer p {
   margin: 5px 0;
@@ -17,34 +25,35 @@
 .footer__logo {
   margin: 0 0 16px 0;
   /*@include cursive__logo;
-  font-size: 18px;
-
-  @include desktop__responsive {
+  font-size: 18px;*/
+}
+@media all and (min-width: 1024px) {
+  .footer__logo {
     width: 137px;
     margin: 0;
   }
-  @include table__responsive {
-    width: 137px;
-    margin: 0;
-  }*/
 }
 .footer__bloc {
   display: flex;
   flex-direction: column;
-  /* @include table__responsive {
+}
+@media all and (min-width: 1024px) {
+  .footer__bloc {
     flex-direction: row;
     align-items: center;
     gap: 7px;
-  }*/
+  }
 }
 .footer__nav {
   display: flex;
   align-items: center;
   font-weight: 500 map-get;
   gap: 7px;
-  /*@include table__responsive {
+}
+@media all and (min-width: 1024px) {
+  .footer__nav {
     width: 190px;
-  }*/
+  }
 }
 .footer__nav--icons {
   display: flex;
@@ -54,11 +63,9 @@
   height: 13px;
   font-size: 13px;
 }
-.footer__nav--info {
-  /* @include table__responsive {
-    & p {
-      width: 130px;
-      height: 20px;
-    }
-  }*/
+@media all and (min-width: 768px) {
+  .footer__nav--info p {
+    width: 130px;
+    height: 20px;
+  }
 }/*# sourceMappingURL=footer.css.map */
