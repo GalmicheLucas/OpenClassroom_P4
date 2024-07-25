@@ -1,0 +1,18 @@
+/**** Shadow ****/
+@mixin object-shadow($color: #d5d5d5) {
+  box-shadow: 0 4px 10px 0 $color;
+}
+
+/**** Responsive ****/
+
+@mixin table__responsive {
+  @media all and (min-width: map-get(768px)) {
+    @content;
+  }
+}
+
+@mixin desktop__responsive {
+  @media all and (min-width: map-get(1024px)) {
+    @content;
+  }
+}
