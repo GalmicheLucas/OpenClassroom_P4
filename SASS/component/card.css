@@ -4,11 +4,17 @@
   padding: 10px 25px 50px 25px;
   width: 100%;
 }
-.restaurants_list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
+@media all and (min-width: 1024px) {
+  .restaurants {
+    padding: 30px 0px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .restaurants_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 .restaurants_card {
   position: relative;
@@ -21,6 +27,11 @@
   background-color: white;
   text-align: left;
   transition: transform 0.2s ease-in-out;
+}
+@media all and (min-width: 1024px) {
+  .restaurants_card {
+    width: 47%;
+  }
 }
 .restaurants_card:hover {
   transform: scale(1.01);
