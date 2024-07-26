@@ -1,5 +1,4 @@
 .footer {
-  width: 100%;
   padding: 22px 25px;
   background-color: #353535;
 }
@@ -13,6 +12,13 @@
     gap: 16px;
   }
 }
+@media all and (min-width: 1024px) {
+  .footer {
+    flex-flow: row-reverse;
+    align-items: baseline;
+    gap: 90px;
+  }
+}
 .footer h2 {
   font-family: shrikhand;
   font-weight: lighter;
@@ -21,6 +27,17 @@
 }
 .footer p {
   margin: 5px 0;
+}
+@media all and (min-width: 1024px) {
+  .footer ul {
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
 }
 .footer li {
   color: white;
