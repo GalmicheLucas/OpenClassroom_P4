@@ -6,11 +6,18 @@
   padding: 15px 0;
   background-color: #dedcdc;
   gap: 10px;
+  width: 423px;
+}
+@media all and (min-width: 1024px) {
+  .info_location {
+    width: 100%;
+  }
 }
 
 .info_icon {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .info_form {
@@ -39,6 +46,12 @@
   padding: 20px 0;
   background-color: whitesmoke;
   text-align: center;
+  width: 423px;
+}
+@media all and (min-width: 1024px) {
+  .hero {
+    width: 100%;
+  }
 }
 .hero__title {
   width: 70%;
@@ -87,6 +100,7 @@
   gap: 4%;
   background-color: lightgray;
   box-shadow: 0 4px 10px 0;
+  width: 375px;
 }
 @media all and (min-width: 1024px) {
   .functioning__step {
