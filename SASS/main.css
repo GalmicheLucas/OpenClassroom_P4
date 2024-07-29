@@ -50,7 +50,8 @@ a {
   .restaurants_list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 50px 80px 0px 80px;
   }
 }
 .restaurants_card {
@@ -180,6 +181,7 @@ a {
 .footer {
   padding: 22px 25px;
   background-color: #353535;
+  width: 100%;
 }
 @media all and (min-width: 768px) {
   .footer {
@@ -195,8 +197,8 @@ a {
   .footer {
     flex-flow: row-reverse;
     align-items: baseline;
-    padding: 62px 90px 30px 0px;
     gap: 90px;
+    width: 97%;
   }
 }
 .footer h2 {
@@ -216,7 +218,7 @@ a {
     flex-direction: row-reverse;
     justify-content: flex-start;
     height: 114px;
-    gap: 16px;
+    gap: 30px;
   }
 }
 .footer li {
@@ -277,11 +279,18 @@ a {
   padding: 15px 0;
   background-color: #dedcdc;
   gap: 10px;
+  width: 423px;
+}
+@media all and (min-width: 1024px) {
+  .info_location {
+    width: 100%;
+  }
 }
 
 .info_icon {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .info_form {
@@ -310,6 +319,12 @@ a {
   padding: 20px 0;
   background-color: whitesmoke;
   text-align: center;
+  width: 423px;
+}
+@media all and (min-width: 1024px) {
+  .hero {
+    width: 100%;
+  }
 }
 .hero__title {
   width: 70%;
@@ -358,6 +373,7 @@ a {
   gap: 4%;
   background-color: lightgray;
   box-shadow: 0 4px 10px 0;
+  width: 375px;
 }
 @media all and (min-width: 1024px) {
   .functioning__step {
