@@ -29,11 +29,17 @@ $breakpoints: (
   padding: 15px 0;
   background-color: #dedcdc;
   gap: 10px;
+  width: 423px;
+@media all and (min-width:1024px) {
+  width: 100%;
+}
+
 }
 
 .info_icon {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .info_form {
@@ -65,7 +71,11 @@ $breakpoints: (
   padding: 20px 0;
   background-color: darken(white, 4%);
   text-align: center;
+  width: 423px;
 
+  @media all and (min-width: 1024px) {
+    width: 100%;
+  }
   &__title {
     width: 70%;
     margin: 10px 0;
@@ -117,6 +127,7 @@ $breakpoints: (
   gap: 4%;
   background-color: darken(LightGray, 0);
   box-shadow: 0 4px 10px 0;
+  width: 375px;
 
   @media all and (min-width: 1024px) {
     width: 30%;
@@ -161,4 +172,3 @@ $breakpoints: (
     font-weight: 600;
   }
 }
-
