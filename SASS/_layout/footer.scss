@@ -1,6 +1,7 @@
 .footer {
   padding: 22px 25px;
   background-color: #353535;
+  width: 100%;
 
   @media all and (min-width: 768px) {
     display: flex;
@@ -15,6 +16,7 @@
     flex-flow: row-reverse;
     align-items: baseline;
     gap: 90px;
+    width: 97%;
   }
   h2 {
     font-family: shrikhand;
@@ -35,7 +37,7 @@
       flex-direction: row-reverse;
       justify-content: flex-start;
       height: 114px;
-      gap: 16px;
+      gap: 30px;
     }
   }
 
