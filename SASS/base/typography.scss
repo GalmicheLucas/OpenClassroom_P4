@@ -7,6 +7,26 @@ a {
   color: inherit;
 }
 
+///* text classic
 
+/**** font weight ****/
+$font-weight: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+);
 
+/// Headings
 
+/**** set-logo ****/
+@mixin cursive__logo {
+  font-size: 27px;
+  font-family: "Shrikhand", cursive;
+}
+/**** title d'en tête ****/
+@mixin title__heading {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: map-get($font-weight, bold);
+}
