@@ -30,10 +30,9 @@ $breakpoints: (
   background-color: #dedcdc;
   gap: 10px;
   width: 423px;
-@media all and (min-width:1024px) {
-  width: 100%;
-}
-
+  @media all and (min-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .info_icon {
