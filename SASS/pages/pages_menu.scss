@@ -67,8 +67,25 @@ $font-weight: (
   }
 }
 
-.logo {
-  height: 35px;
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
+
+  & a {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 23px;
+  }
+
+  img {
+    width: 162px;
+    max-height: 100%;
+    padding: 20px 0px 12px 0px;
+  }
 }
 
 .restaurant-name {
@@ -107,6 +124,9 @@ $font-weight: (
 
     & h2 {
       width: 87%;
+      font-family: "Shrikhand";
+      font-size: 28px;
+      font-weight: 400;
 
       @include desktop__responsive {
         display: flex;
@@ -264,5 +284,59 @@ $font-weight: (
       color: $white;
       transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
     }
+  }
+}
+
+.menu-icon{
+  font-size: 25px;
+
+  & menu-icon-liked {
+    display: inline-block;
+    opacity: 1;
+  }
+
+  & menu-icon-notLiked {
+    display: none;
+  }
+
+  &:hover .menu-icon {
+    opacity: 1;
+  }
+
+  &-notLiked {
+    position: absolute;
+  }
+
+  &-liked {
+    position: relative;
+    background: linear-gradient(
+      160deg,
+      rgba(255, 121, 218, 1) 0%,
+      rgba(147, 86, 220, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 500ms ease-in-out;
+    opacity: 0;
+  }
+}
+
+.menu-button {
+  padding: 40px;
+}
+.menu-footer {
+  padding: 22px 25px;
+  background-color: #353535;
+
+  h2 {
+    font-family: shrikhand;
+    font-weight: lighter;
+    color: white;
+    font-size: 18px;
+  }
+
+  li {
+    color: white;
   }
 }
