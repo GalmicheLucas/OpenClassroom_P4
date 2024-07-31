@@ -29,7 +29,7 @@ $breakpoints: (
   padding: 15px 0;
   background-color: #dedcdc;
   gap: 10px;
-  width: 423px;
+  width: 103%;
   @media all and (min-width: 1024px) {
     width: 100%;
   }
@@ -70,7 +70,7 @@ $breakpoints: (
   padding: 20px 0;
   background-color: darken(white, 4%);
   text-align: center;
-  width: 423px;
+  width: 103%;
 
   @media all and (min-width: 1024px) {
     width: 100%;
@@ -86,6 +86,9 @@ $breakpoints: (
     margin: 0;
     font-size: 18px;
     font-weight: 200 map-get;
+    @media all and (min-width: 1024px) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -126,7 +129,7 @@ $breakpoints: (
   gap: 4%;
   background-color: darken(LightGray, 0);
   box-shadow: 0 4px 10px 0;
-  width: 375px;
+  width: 100%;
 
   @media all and (min-width: 1024px) {
     width: 30%;
