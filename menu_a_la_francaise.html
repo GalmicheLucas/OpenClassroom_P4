@@ -32,33 +32,38 @@
   <body>
     <!-- HEADER -->
     <header>
-      <a href="/index.html"
-        ><i class="fa-solid fa-arrow-left header_icon"></i
-      ></a>
+      <nav>
+      <a href="#"><i class="fa-solid fa-arrow-left header_icon"></i></a>
       <img
-        src="/IMG/images/Images et textes Ohmyfood/images/logo/ohmyfood.png"
+        src="./IMG/images/Images et textes Ohmyfood/images/logo/ohmyfood.png"
         alt="logo-ohmyfood"
       />
-    </header>
-    <!-- HEADER -->
-
-    <!-- MAIN -->
-    <main>
+      </nav>
       <!-- BANNER -->
       <section class="page__restaurant">
         <div class="page__restaurant--img">
-          <img
-            src="/IMG/images/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          <img class="logo"
+            src="./IMG/images/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
             alt="A la française"
           />
         </div>
       </section>
       <!-- BANNER -->
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main>
+      
 
       <!-- MENU -->
-      <section>
-        <header>
-          <h1>À la française</h1>
+      <section class="slight">
+        <div>
+          <div>
+            <div class="slight__heading">
+              <h2>À la française</h2>
+            </div>
+          </div>
           <label>
             <imput
               type="checkbox"
@@ -69,21 +74,22 @@
             <i class="fa-regular fa-heart icons-notLiked"></i>
             <i class="fa-solid fa-heart icons-liked"></i>
           </label>
-        </header>
+        </div>
 
-        <div>
-          <div>
-            <h3>ENTRÉES</h3>
+        <div class="slight__container">
+          <div class="race-list">
+            <h3 class="race-list__heading">ENTRÉES</h3>
             <span></span>
 
-            <article>
-              <div>
-                <h4>Tartare de poulpe acidulé</h4>
-                <p>Aux zestes d'orange</p>
+            <article class="race-cards">
+              <div class="race-cards__info">
+                <div class="race-cards__description">
+                  <h4>Tartare de poulpe acidulé</h4>
+                  <p>Aux zestes d'orange</p>
+                </div>
               </div>
-              <div>25€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
+              <div class="race-cards__price">25€</div>
+              <div class="race-cards__checkout">
               </div>
             </article>
 
@@ -95,95 +101,100 @@
                 </div>
               </div>
               <div class="race-cards__price">35€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
+              <div class="race-cards__checkout">
               </div>
             </article>
 
-            <article>
-              <div>
-                <h4>Soupe à l'oignon</h4>
-                <p>Revisitée</p>
+            <article class="race-cards">
+              <div class="race-cards__info">
+                <div class="race-cards__description">
+                  <h4>Soupe à l'oignon</h4>
+                  <p>Revisitée</p>
+                </div>
               </div>
-              <div>20€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
+              <div class="race-cards__price">20€</div>
+              <div class="race-cards__checkout"></div>
+            </article>
+          </div>
+
+          <div class="race-list">
+            <h3 class="race-list__heading">PLATS</h3>
+            <span></span>
+
+            <article class="race-cards">
+              <div class="race-cards__info">
+                <div class="race-cards__description">
+                  <h4>Noix de Saint-Jacques</h4>
+                  <p>Accompagnées d'une purée de panais</p>
+                </div>
+              </div>
+              <div class="race-cards__price">40€</div>
+              <div class="race-cards__checkout">
+              </div>
+            </article>
+
+            <article class="race-cards">
+              <div class="race-cards__info">
+                <div class="race-cards__description">
+                  <h4>Magret de canard</h4>
+                  <p>Et parmentier de pommes de terres</p>
+                </div>
+              </div>
+              <div class="race-cards__price">35€</div>
+              <div class="race-cards__checkout">
+              </div>
+            </article>
+
+            <article class="race-cards">
+              <div class="race-cards__info">
+                <div class="race-cards__description">
+                  <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                  <p>Sur son lit de gnocchis aux légumes</p>
+                </div>
+              </div>
+              <div class="race-cards__price">44€</div>
+              <div class="race-cards__checkout">
               </div>
             </article>
           </div>
 
-          <div>
-            <h3>PLATS</h3>
+          <div class="race-list">
+            <h3 class="race-list__heading">DESSERTS</h3>
             <span></span>
 
-            <article>
-              <div>
-                <h4>Noix de Saint-Jacques</h4>
-                <p>Accompagnées d'une purée de panais</p>
+            <article class="race-cards">
+              <div class="race-cards__info">
+                <div class="race-cards__description">
+                  <h4>Pétales de violettes glacés</h4>
+                  <p>Et purée de noisettes</p>
+                </div>
               </div>
-              <div>40€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
-              </div>
-            </article>
-
-            <article>
-              <div>
-                <h4>Magret de canard</h4>
-                <p>Et parmentier de pommes de terres</p>
-              </div>
-              <div>35€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
+              <div class="race-cards__price">18€</div>
+              <div class="race-cards__checkout">
               </div>
             </article>
 
-            <article>
-              <div>
-                <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                <p>Sur son lit de gnocchis aux légumes</p>
+            <article class="race-cards">
+              <div class="race-cards__info">
+                <div class="race-cards__description">
+                  <h4>Fondant au chocolat</h4>
+                  <p>Revisité</p>
+                </div>
               </div>
-              <div>44€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
-              </div>
-            </article>
-          </div>
-
-          <div>
-            <h3>DESSERTS</h3>
-            <span></span>
-
-            <article>
-              <div>
-                <h4>Pétales de violettes glacés</h4>
-                <p>Et purée de noisettes</p>
-              </div>
-              <div>18€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
+              <div class="race-cards__price">22€</div>
+              <div class="race-cards__checkout">
               </div>
             </article>
 
-            <article>
-              <div>
-                <h4>Fondant au chocolat</h4>
-                <p>Revisité</p>
+            <article class="race-cards">
+              <div class="race-cards__info">
+                <div class="race-cards__description">
+                  <h4>Millefeuille croustillant</h4>
+                  <p>Myrtilles et pâte d'amande</p>
+                </div>
               </div>
-              <div>22€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
-              </div>
-            </article>
-
-            <article>
-              <div>
-                <h4>Millefeuille croustillant</h4>
-                <p>Myrtilles et pâte d'amande</p>
-              </div>
-              <div>23€</div>
-              <div>
-                <i class="fa-regular fa-circle-check menu_card_check_icon"></i>
+              <div class="race-cards__price">23€</div>
+              <div class="race-cards__checkout">
               </div>
             </article>
           </div>
@@ -200,10 +211,8 @@
     <!-- FOOTER -->
     <footer>
       <div>
-        <img
-          src="/assets/images/Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg"
-          alt="logo-ohmyfood"
-        />
+        <div class="footer">
+          <h2>ohmyfood</h2>
 
         <ul>
           <li>
