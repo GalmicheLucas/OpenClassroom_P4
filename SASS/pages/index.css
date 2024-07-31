@@ -6,7 +6,7 @@
   padding: 15px 0;
   background-color: #dedcdc;
   gap: 10px;
-  width: 423px;
+  width: 103%;
 }
 @media all and (min-width: 1024px) {
   .info_location {
@@ -46,7 +46,7 @@
   padding: 20px 0;
   background-color: whitesmoke;
   text-align: center;
-  width: 423px;
+  width: 103%;
 }
 @media all and (min-width: 1024px) {
   .hero {
@@ -63,6 +63,11 @@
   margin: 0;
   font-size: 18px;
   font-weight: 200 map-get;
+}
+@media all and (min-width: 1024px) {
+  .hero p {
+    margin-bottom: 20px;
+  }
 }
 
 .functioning {
@@ -100,7 +105,7 @@
   gap: 4%;
   background-color: lightgray;
   box-shadow: 0 4px 10px 0;
-  width: 375px;
+  width: 100%;
 }
 @media all and (min-width: 1024px) {
   .functioning__step {
