@@ -22,6 +22,16 @@
      object-fit: cover;
 }
 
+.logo {
+  height: 35px;
+}
+
+.restaurant-name {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-weight: 400;
+}
+
 .slight {
   position: relative;
   background-color: #f0f0f0;
@@ -172,7 +182,8 @@
 }
 .race-cards__price {
   display: flex;
-  align-items: flex-end;
+  align-self: flex-end;
+  font-family: "roboto";
   width: 15%;
   padding: 5px;
 }
