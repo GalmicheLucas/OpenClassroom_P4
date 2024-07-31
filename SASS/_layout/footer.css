@@ -1,7 +1,7 @@
 .footer {
   padding: 22px 25px;
   background-color: #353535;
-  width: 100%;
+  width: 90%;
 }
 @media all and (min-width: 768px) {
   .footer {
