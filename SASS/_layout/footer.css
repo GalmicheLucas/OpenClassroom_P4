@@ -28,7 +28,7 @@
   font-size: 18px;
 }
 .footer i {
-  padding: 5px;
+  padding: 0 15px;
 }
 .footer p {
   margin: 5px 0;
@@ -38,14 +38,12 @@
     flex-flow: row;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    height: 114px;
     gap: 30px;
   }
 }
 .footer li {
   color: white;
+  list-style: none;
 }
 .footer_logo {
   margin: 0 0 16px 0;
