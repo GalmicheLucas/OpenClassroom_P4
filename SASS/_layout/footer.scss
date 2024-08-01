@@ -26,7 +26,7 @@
   }
 
   i {
-    padding: 5px;
+    padding: 0 15px;
   }
 
   p {
@@ -38,15 +38,13 @@
       flex-flow: row;
       display: flex;
       align-items: center;
-      flex-direction: row-reverse;
-      justify-content: flex-start;
-      height: 114px;
       gap: 30px;
     }
   }
 
   li {
     color: white;
+    list-style: none;
   }
 
   &_logo {
