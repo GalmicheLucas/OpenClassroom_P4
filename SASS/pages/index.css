@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   width: 109px;
+  font-weight: 500;
 }
 .info_form .placeholder {
   position: absolute;
@@ -55,14 +56,14 @@
 }
 .hero__title {
   width: 70%;
-  margin: 10px 0;
+  margin: 0;
   /*@include title__heading;*/
 }
 .hero p {
   width: 85%;
-  margin: 0;
+  margin-bottom: 10px;
   font-size: 18px;
-  font-weight: 200 map-get;
+  font-weight: 300;
 }
 @media all and (min-width: 1024px) {
   .hero p {
@@ -138,11 +139,10 @@
   justify-content: center;
   align-items: center;
   width: 20px;
-  height: 25px;
+  height: 10px;
   color: icon;
 }
 .functioning__step--subtitle {
-  width: 211px;
   height: 15px;
-  font-weight: 600;
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */
