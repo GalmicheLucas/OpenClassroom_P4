@@ -46,6 +46,7 @@ $breakpoints: (
   display: flex;
   align-items: center;
   width: 109px;
+  font-weight: 500;
 
   .placeholder {
     position: absolute;
@@ -77,15 +78,15 @@ $breakpoints: (
   }
   &__title {
     width: 70%;
-    margin: 10px 0;
+    margin: 0;
     /*@include title__heading;*/
   }
 
   & p {
     width: 85%;
-    margin: 0;
+    margin-bottom: 10px;
     font-size: 18px;
-    font-weight: 200 map-get;
+    font-weight: 300 ;
     @media all and (min-width: 1024px) {
       margin-bottom: 20px;
     }
@@ -164,13 +165,12 @@ $breakpoints: (
     justify-content: center;
     align-items: center;
     width: 20px;
-    height: 25px;
+    height: 10px;
     color: icon;
   }
 
   &--subtitle {
-    width: 211px;
     height: 15px;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
