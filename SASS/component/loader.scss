@@ -1,102 +1,282 @@
-@keyframes animationFade {
-    0% {
-      opacity: 0;
-      transform: translateX(100%);
+$main-color: #9356dc;
+$secondary-color: #ff79da;
+$third-color: #99e2d0;
+$background-color: #f2f2f2;
+$grey: #eaeaea;
+$white: #ffffff;
+$shadow: #d5d5d5;
+$black: #353535;
+$LightGray: #f6f6f6;
+$icon: #7e7e7e;
+
+
+
+.loading-spinner-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $main-color;
+  opacity: 0.95;
+  animation: loading-appear 4s both ease-in-out;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  min-width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: gradient-loader;
+  z-index: 0;
+  animation: rotate-gradient 3s infinite;
+
+  &::after {
+    z-index: 0;
+    position: absolute;
+    content: "";
+    width: 85%;
+    height: 85%;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &__border {
+    z-index: -1;
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    background-color: darken($white, 10%);
+    border-radius: 50%;
+  }
+
+  &__plate {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border: 4px solid darken($white, 60%);
+    background-color: darken($white, 65%);
+    margin: 0% 2%;
+    border-radius: 50%;
+    z-index: 3;
+
+    &::before {
+      position: absolute;
+      display: flex;
+      width: 93%;
+      height: 93%;
+      border-radius: 50%;
+      border-bottom: 2px solid $white;
+      background-color: transparent;
+      transform: rotate(-25deg);
+      overflow: hidden;
+      content: "";
     }
-  
-    50% {
+
+    &::after {
+      position: absolute;
+      display: flex;
+      width: 75%;
+      height: 75%;
+      border-radius: 50%;
+      border: 4px solid $white;
+      background-color: darken($white, 75%);
+      overflow: hidden;
+      content: "";
+    }
+
+    &__knife {
+      position: absolute;
+      right: -40%;
+      height: 120px;
+      width: auto;
+      z-index: 6;
       opacity: 1;
-      transform: translateX(-5%);
-    }
-  
-    100% {
-      transform: translateX(0);
-      transform: translateY(1%);
-    }
-  }
-  
-  @keyframes spinning {
-    from {
-      transform: rotate(360deg);
-      opacity: 1;
-    }
-    to {
-      transform: rotate(0deg);
-      opacity: 0.3;
-    }
-  }
-  
-  @keyframes loader {
-    from {
-    }
-    to {
-      visibility: hidden;
-      display: none;
-    }
-  }
-  
+      animation: ustensils-moving 500ms 610ms;
 
-
-.loader{
-    z-index: 100;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(193deg, color(purple) -11.44%, color(pink) 123.93%);
-
-    animation: loader 1s forwards;
-
-    &__container{
-        position: relative;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+      & img {
         height: 100%;
-
-        &__logo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            position: relative;
-
-            width: 200px;
-            height: 40px;
-
-            background-image: url("IMG/images/Images et textes Ohmyfood/images/logo/ohmyfood.png");
-            background-repeat: no-repeat;
-            background-size:contain;
-            filter: invert(100%);
-
-            &::before{
-                content: "";
-                position: absolute;
-                
-                width: 280px;
-                height: 280px;
-
-                border-radius: 50%;
-                border: 7px solid transparent;
-                border-top-color: #000;
-                animation: spinning 800ms linear infinite;
-            }
-
-            &::after{
-                content: "";
-                position: absolute;
-                
-                width: 250px;
-                height: 250px;
-
-                border-radius: 50%;
-                border: 7px solid transparent;
-                border-top-color: #000;
-
-                animation: spinning 900ms linear reverse infinite;
-            }
-        }
+      }
     }
-    
+
+    &__fork {
+      position: absolute;
+      left: -40%;
+      height: 120px;
+      width: auto;
+      z-index: 5;
+      opacity: 1;
+      animation: ustensils-moving 500ms 610ms * 3;
+
+      & img {
+        height: 100%;
+      }
+    }
+
+    &__food12 {
+      width: 25%;
+      height: 25%;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        position: absolute;
+        top: 35%;
+        right: 31%;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 40px;
+        content: "\f578";
+        color: $white;
+        transform: translateY(-150px);
+        animation: icons-appearing 610ms both;
+      }
+
+      &::after {
+        width: auto;
+        height: auto;
+        z-index: 1;
+        position: absolute;
+        top: 35%;
+        right: 30%;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 40px;
+        content: "\f7ec";
+        color: $white;
+        transform: translateY(-150px);
+        animation: icons-appearing icons-delay 610ms both;
+      }
+    }
+
+    &__food34 {
+      width: 25%;
+      height: 25%;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        position: absolute;
+        top: 35%;
+        right: 33%;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 40px;
+        content: "\f7ef";
+        color: $white;
+        transform: translateY(-150px);
+        animation: icons-appearing 610ms 610ms * 2 both;
+      }
+
+      &::after {
+        position: absolute;
+        top: 30%;
+        right: 37%;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 40px;
+        content: "\f5d1";
+        color: $white;
+        transform: translateY(-150px);
+        animation: icons-appearing 610ms 610ms 3 both;
+      }
+    }
+  }
+  @keyframes icons-appearing {
+    0% {
+      transform: translateY(-150px);
+      opacity: 0;
+      animation-timing-function: cubic-bezier(0.5, 0.78, 0.83, 0.67);
+    }
+
+    40% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+
+    60% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+
+    67% {
+      transform: rotate(10deg);
+    }
+
+    74% {
+      transform: rotate(-10deg);
+    }
+
+    80% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(+150px);
+      opacity: 0;
+      animation-timing-function: cubic-bezier(0.5, 0.78, 0.83, 0.67);
+    }
+  }
+
+  @keyframes loading-appear {
+    50% {
+      opacity: 0.95;
+    }
+
+    99% {
+      z-index: 21;
+    }
+
+    100% {
+      opacity: 0;
+      z-index: -20;
+    }
+  }
+
+  @keyframes rotate-gradient {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @mixin circle {
+    border-radius: 50%;
+  }
+  /* Gradient */
+  $gradient-loader: linear-gradient(
+    to top,
+    lighten($main-color, 10%),
+    $secondary-color,
+    transparent,
+    transparent
+  );
+
+  /* Loading spinner animation delay */
+  $icons-delay: 610ms;
 }
