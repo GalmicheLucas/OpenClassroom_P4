@@ -234,13 +234,6 @@ nav img {
 .menu-icon {
   font-size: 25px;
 }
-.menu-icon menu-icon-liked {
-  display: inline-block;
-  opacity: 1;
-}
-.menu-icon menu-icon-notLiked {
-  display: none;
-}
 .menu-icon:hover .menu-icon {
   opacity: 1;
 }
