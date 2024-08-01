@@ -50,7 +50,7 @@
 }
 .restaurants_card p {
   font-size: 17px;
-  margin: 8px 0 0;
+  margin: 0;
   font-weight: 300;
 }
 .restaurants_card_content {
@@ -74,7 +74,7 @@
 .icons icons-notLiked {
   display: none;
 }
-.icons:hover .icons-liked {
+.icons:hover .icons-liked, .icons:active .icons-liked {
   opacity: 1;
 }
 .icons-notLiked {
@@ -102,7 +102,6 @@
   padding: 5px 10px;
   border-radius: 4px;
   color: #4d7052;
-  z-index: 40;
   background-color: #99e2d0;
   animation: new 1600ms ease-in-out;
   animation-iteration-count: infinite;
