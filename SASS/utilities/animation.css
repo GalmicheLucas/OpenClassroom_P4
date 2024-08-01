@@ -1,0 +1,30 @@
+@keyframes animationFade {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(1%);
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 0.3;
+  }
+}
+@keyframes loader {
+  to {
+    visibility: hidden;
+    display: none;
+  }
+}/*# sourceMappingURL=animation.css.map */
