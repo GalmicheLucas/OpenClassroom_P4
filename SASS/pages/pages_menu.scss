@@ -290,14 +290,7 @@ nav {
 .menu-icon{
   font-size: 25px;
 
-  & menu-icon-liked {
-    display: inline-block;
-    opacity: 1;
-  }
-
-  & menu-icon-notLiked {
-    display: none;
-  }
+  
 
   &:hover .menu-icon {
     opacity: 1;
