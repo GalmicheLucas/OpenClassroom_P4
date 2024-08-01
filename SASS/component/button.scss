@@ -12,7 +12,8 @@
   color: #FFFFFF;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: background 300ms, box-shadow 300ms;
-
+  margin: 25px;
+  
   &:hover {
     opacity: 0.88;
   }
