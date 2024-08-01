@@ -86,7 +86,7 @@ $breakpoints: (
     width: 85%;
     margin-bottom: 10px;
     font-size: 18px;
-    font-weight: 300 ;
+    font-weight: 300;
     @media all and (min-width: 1024px) {
       margin-bottom: 20px;
     }
@@ -145,19 +145,11 @@ $breakpoints: (
   }
 
   &--number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    left: -19px;
-    bottom: -5px;
-    height: 24px;
-    width: 24px;
     border-radius: 50%;
     color: white;
     background-color: #9356dc;
-    padding: 1%;
+    padding: 2px 7px;
+    margin: 0 25px 0 -12px;
   }
 
   &--icon {
