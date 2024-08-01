@@ -113,7 +113,6 @@ $breakpoints: (
     margin: auto;
 
     @media all and (min-width: 1024px) {
-      width: 98%;
       flex-direction: row;
       justify-content: space-between;
     }
@@ -123,7 +122,6 @@ $breakpoints: (
 .functioning__step {
   display: flex;
   align-items: center;
-  height: 72px;
   margin: 15px 0;
   border-radius: 20px;
   border: none;
@@ -162,7 +160,7 @@ $breakpoints: (
   }
 
   &--subtitle {
-    height: 15px;
+    
     font-weight: 500;
   }
 }
