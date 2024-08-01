@@ -120,19 +120,11 @@
   color: #9356dc;
 }
 .functioning__step--number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  left: -19px;
-  bottom: -5px;
-  height: 24px;
-  width: 24px;
   border-radius: 50%;
   color: white;
   background-color: #9356dc;
-  padding: 1%;
+  padding: 2px 7px;
+  margin: 0 25px 0 -12px;
 }
 .functioning__step--icon {
   display: flex;
