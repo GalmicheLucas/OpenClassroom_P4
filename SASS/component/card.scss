@@ -91,7 +91,14 @@ $icon: #7e7e7e;
     display: flex;
     gap: 8px;
   }
+  & icons_reposition-liked {
+    display: inline-block;
+    opacity: 1;
+  }
 
+  & icons_reposition-notLiked {
+    display: none;
+  }
 
   & icons-liked {
     display: inline-block;
