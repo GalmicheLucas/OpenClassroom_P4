@@ -126,8 +126,8 @@ $breakpoints: (
   border-radius: 20px;
   border: none;
   gap: 4%;
-  background-color: darken(LightGray, 0);
-  box-shadow: 0 4px 10px 0;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 5px 0;
   width: 100%;
 
   @media all and (min-width: 1024px) {
@@ -160,7 +160,6 @@ $breakpoints: (
   }
 
   &--subtitle {
-    
     font-weight: 500;
   }
 }
