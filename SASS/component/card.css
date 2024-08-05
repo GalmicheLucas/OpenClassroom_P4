@@ -76,6 +76,13 @@
   display: flex;
   gap: 8px;
 }
+.icons icons_reposition-liked {
+  display: inline-block;
+  opacity: 1;
+}
+.icons icons_reposition-notLiked {
+  display: none;
+}
 .icons icons-liked {
   display: inline-block;
   opacity: 1;
