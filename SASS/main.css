@@ -128,6 +128,13 @@ a {
   display: flex;
   gap: 8px;
 }
+.icons icons_reposition-liked {
+  display: inline-block;
+  opacity: 1;
+}
+.icons icons_reposition-notLiked {
+  display: none;
+}
 .icons icons-liked {
   display: inline-block;
   opacity: 1;
@@ -238,12 +245,16 @@ a {
 .footer p {
   margin: 5px 0;
 }
+.footer ul {
+  list-style: none;
+}
 @media all and (min-width: 1024px) {
   .footer ul {
     flex-flow: row;
     display: flex;
     align-items: center;
     gap: 30px;
+    list-style: none;
   }
 }
 .footer li {
