@@ -9,6 +9,9 @@
     padding: 30px 0px;
     width: 100%;
   }
+  .restaurants h2 {
+    margin-left: 65px;
+  }
 }
 @media all and (min-width: 1024px) {
   .restaurants_list {
@@ -32,7 +35,7 @@
 }
 @media all and (min-width: 1024px) {
   .restaurants_card {
-    width: 47%;
+    width: 40%;
   }
 }
 .restaurants_card:hover {
@@ -64,6 +67,12 @@
   position: absolute;
   bottom: 16px;
   right: 16px;
+  display: flex;
+  gap: 8px;
+}
+.icons_reposition {
+  font-size: 30px;
+  position: relative;
   display: flex;
   gap: 8px;
 }
