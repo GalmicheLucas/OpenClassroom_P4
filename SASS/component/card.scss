@@ -18,6 +18,10 @@ $icon: #7e7e7e;
   @media all and (min-width: 1024px) {
     padding: 30px 0px;
     width: 100%;
+
+    h2 {
+      margin-left: 65px;
+    }
   }
 
   &_list {
@@ -42,7 +46,7 @@ $icon: #7e7e7e;
     transition: transform 0.2s ease-in-out;
 
     @media all and (min-width: 1024px) {
-      width: 47%;
+      width: 40%;
     }
 
     &:hover {
@@ -81,6 +85,14 @@ $icon: #7e7e7e;
   display: flex;
   gap: 8px;
 
+  &_reposition {
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    gap: 8px;
+  }
+
+
   & icons-liked {
     display: inline-block;
     opacity: 1;
@@ -90,8 +102,8 @@ $icon: #7e7e7e;
     display: none;
   }
 
-  &:hover .icons-liked,
-  &:active .icons-liked {
+  &:hover .icons-liked ,
+  &:active .icons-liked  {
     opacity: 1;
   }
 
