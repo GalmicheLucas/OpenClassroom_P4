@@ -1,7 +1,7 @@
 .footer {
   padding: 22px 25px;
   background-color: #353535;
-  width: 90%;
+  width: 88%;
 }
 @media all and (min-width: 768px) {
   .footer {
@@ -18,7 +18,7 @@
     flex-flow: row-reverse;
     align-items: baseline;
     gap: 90px;
-    width: 97%;
+    width: 96%;
   }
 }
 .footer h2 {
@@ -28,26 +28,28 @@
   font-size: 18px;
 }
 .footer i {
-  padding: 0 15px;
+  margin-right: 10px;
 }
 .footer p {
   margin: 5px 0;
 }
 .footer ul {
   list-style: none;
+  padding: 0;
 }
 @media all and (min-width: 1024px) {
   .footer ul {
+    list-style: none;
     flex-flow: row;
     display: flex;
     align-items: center;
     gap: 30px;
-    list-style: none;
   }
 }
 .footer li {
   color: white;
   list-style: none;
+  padding-bottom: 5px;
 }
 .footer_logo {
   margin: 0 0 16px 0;
