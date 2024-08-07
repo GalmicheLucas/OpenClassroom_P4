@@ -203,7 +203,7 @@ nav img {
   align-self: flex-end;
   font-family: "roboto";
   font-weight: 500;
-  padding: 5px;
+  padding: 15px;
 }
 .race-cards__price p {
   margin: 0;
@@ -231,16 +231,26 @@ nav img {
   transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 }
 
-.menu-icon {
-  font-size: 25px;
+.icons-reposition {
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  gap: 8px;
 }
-.menu-icon:hover .menu-icon {
+.icons-reposition icons-reposition-liked {
+  display: inline-block;
   opacity: 1;
 }
-.menu-icon-notLiked {
+.icons-reposition icons-reposition-notLiked {
+  display: none;
+}
+.icons-reposition:hover .icons-reposition-liked, .icons-reposition:active .icons-reposition-liked {
+  opacity: 1;
+}
+.icons-reposition-notLiked {
   position: absolute;
 }
-.menu-icon-liked {
+.icons-reposition-liked {
   position: relative;
   background: linear-gradient(160deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   background-clip: text;
@@ -266,4 +276,11 @@ nav img {
 }
 .menu-footer li {
   color: white;
+}
+.menu-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.menu-footer i {
+  margin-right: 10px;
 }/*# sourceMappingURL=pages_menu.css.map */
