@@ -255,7 +255,7 @@ nav {
     align-self: flex-end;
     font-family: "roboto";
     font-weight: 500;
-    padding: 5px;
+    padding: 15px;
 
     & p {
       margin: 0;
@@ -287,12 +287,24 @@ nav {
   }
 }
 
-.menu-icon{
-  font-size: 25px;
-
+.icons-reposition {
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    gap: 8px;
   
 
-  &:hover .menu-icon {
+  & icons-reposition-liked {
+    display: inline-block;
+    opacity: 1;
+  }
+
+  & icons-reposition-notLiked {
+    display: none;
+  }
+
+  &:hover .icons-reposition-liked,
+  &:active .icons-reposition-liked {
     opacity: 1;
   }
 
@@ -331,5 +343,14 @@ nav {
 
   li {
     color: white;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  i {
+    margin-right: 10px;
   }
 }
