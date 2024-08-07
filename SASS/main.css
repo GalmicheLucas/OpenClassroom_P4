@@ -54,7 +54,7 @@ a {
   background-color: #f2f2f2;
   margin-top: 40px;
   padding: 10px;
-  width: 95%;
+  width: 96%;
 }
 @media all and (min-width: 1024px) {
   .restaurants {
@@ -127,13 +127,6 @@ a {
   position: relative;
   display: flex;
   gap: 8px;
-}
-.icons icons_reposition-liked {
-  display: inline-block;
-  opacity: 1;
-}
-.icons icons_reposition-notLiked {
-  display: none;
 }
 .icons icons-liked {
   display: inline-block;
@@ -213,7 +206,7 @@ a {
 .footer {
   padding: 22px 25px;
   background-color: #353535;
-  width: 90%;
+  width: 88%;
 }
 @media all and (min-width: 768px) {
   .footer {
@@ -230,7 +223,7 @@ a {
     flex-flow: row-reverse;
     align-items: baseline;
     gap: 90px;
-    width: 97%;
+    width: 96%;
   }
 }
 .footer h2 {
@@ -240,26 +233,28 @@ a {
   font-size: 18px;
 }
 .footer i {
-  padding: 0 15px;
+  margin-right: 10px;
 }
 .footer p {
   margin: 5px 0;
 }
 .footer ul {
   list-style: none;
+  padding: 0;
 }
 @media all and (min-width: 1024px) {
   .footer ul {
+    list-style: none;
     flex-flow: row;
     display: flex;
     align-items: center;
     gap: 30px;
-    list-style: none;
   }
 }
 .footer li {
   color: white;
   list-style: none;
+  padding-bottom: 5px;
 }
 .footer_logo {
   margin: 0 0 16px 0;
@@ -316,7 +311,7 @@ a {
   padding: 15px 0;
   background-color: #dedcdc;
   gap: 10px;
-  width: 103%;
+  width: 101%;
 }
 @media all and (min-width: 1024px) {
   .info_location {
@@ -410,11 +405,9 @@ a {
   align-items: center;
   margin: 15px 0;
   border-radius: 20px;
-  border: none;
   gap: 4%;
   background-color: #f7f7f7;
   box-shadow: 0 2px 5px 0;
-  width: 100%;
 }
 @media all and (min-width: 1024px) {
   .functioning__step {
@@ -426,6 +419,9 @@ a {
 }
 .functioning__step:hover > .functioning__step--icon {
   color: #9356dc;
+}
+.functioning__step .fa-solid {
+  color: #7e7e7e;
 }
 .functioning__step--number {
   border-radius: 50%;
@@ -650,7 +646,7 @@ nav img {
   align-self: flex-end;
   font-family: "roboto";
   font-weight: 500;
-  padding: 5px;
+  padding: 15px;
 }
 .race-cards__price p {
   margin: 0;
@@ -678,16 +674,26 @@ nav img {
   transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 }
 
-.menu-icon {
-  font-size: 25px;
+.icons-reposition {
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  gap: 8px;
 }
-.menu-icon:hover .menu-icon {
+.icons-reposition icons-reposition-liked {
+  display: inline-block;
   opacity: 1;
 }
-.menu-icon-notLiked {
+.icons-reposition icons-reposition-notLiked {
+  display: none;
+}
+.icons-reposition:hover .icons-reposition-liked, .icons-reposition:active .icons-reposition-liked {
+  opacity: 1;
+}
+.icons-reposition-notLiked {
   position: absolute;
 }
-.menu-icon-liked {
+.icons-reposition-liked {
   position: relative;
   background: linear-gradient(160deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   background-clip: text;
@@ -714,11 +720,16 @@ nav img {
 .menu-footer li {
   color: white;
 }
+.menu-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.menu-footer i {
+  margin-right: 10px;
+}
 
 .loading-spinner-container {
   position: fixed;
-  height: 100%;
-  width: 100%;
   left: 0;
   top: 0;
   bottom: 0;
