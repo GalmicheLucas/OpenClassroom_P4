@@ -1,7 +1,7 @@
 .footer {
   padding: 22px 25px;
   background-color: #353535;
-  width: 90%;
+  width: 88%;
 
   @media all and (min-width: 768px) {
     display: flex;
@@ -16,7 +16,7 @@
     flex-flow: row-reverse;
     align-items: baseline;
     gap: 90px;
-    width: 97%;
+    width: 96%;
   }
   h2 {
     font-family: shrikhand;
@@ -26,7 +26,7 @@
   }
 
   i {
-    padding: 0 15px;
+    margin-right: 10px;
   }
 
   p {
@@ -35,18 +35,21 @@
 
   ul {
     list-style: none;
+    padding: 0;
     @media all and (min-width: 1024px) {
+      list-style: none;
       flex-flow: row;
       display: flex;
       align-items: center;
       gap: 30px;
-      list-style: none;
+      
     }
   }
 
   li {
     color: white;
     list-style: none;
+    padding-bottom: 5px;
   }
 
   &_logo {
