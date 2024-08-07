@@ -2,7 +2,7 @@
   background-color: #f2f2f2;
   margin-top: 40px;
   padding: 10px;
-  width: 95%;
+  width: 96%;
 }
 @media all and (min-width: 1024px) {
   .restaurants {
@@ -75,13 +75,6 @@
   position: relative;
   display: flex;
   gap: 8px;
-}
-.icons icons_reposition-liked {
-  display: inline-block;
-  opacity: 1;
-}
-.icons icons_reposition-notLiked {
-  display: none;
 }
 .icons icons-liked {
   display: inline-block;
