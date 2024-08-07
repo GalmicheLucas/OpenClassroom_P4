@@ -6,7 +6,7 @@
   padding: 15px 0;
   background-color: #dedcdc;
   gap: 10px;
-  width: 103%;
+  width: 101%;
 }
 @media all and (min-width: 1024px) {
   .info_location {
@@ -100,11 +100,9 @@
   align-items: center;
   margin: 15px 0;
   border-radius: 20px;
-  border: none;
   gap: 4%;
   background-color: #f7f7f7;
   box-shadow: 0 2px 5px 0;
-  width: 100%;
 }
 @media all and (min-width: 1024px) {
   .functioning__step {
@@ -116,6 +114,9 @@
 }
 .functioning__step:hover > .functioning__step--icon {
   color: #9356dc;
+}
+.functioning__step .fa-solid {
+  color: #7e7e7e;
 }
 .functioning__step--number {
   border-radius: 50%;
