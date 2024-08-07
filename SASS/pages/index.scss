@@ -29,7 +29,7 @@ $breakpoints: (
   padding: 15px 0;
   background-color: #dedcdc;
   gap: 10px;
-  width: 103%;
+  width: 101%;
   @media all and (min-width: 1024px) {
     width: 100%;
   }
@@ -124,11 +124,9 @@ $breakpoints: (
   align-items: center;
   margin: 15px 0;
   border-radius: 20px;
-  border: none;
   gap: 4%;
   background-color: #f7f7f7;
   box-shadow: 0 2px 5px 0;
-  width: 100%;
 
   @media all and (min-width: 1024px) {
     width: 30%;
@@ -141,7 +139,9 @@ $breakpoints: (
       color: #9356dc;
     }
   }
-
+.fa-solid{
+  color: #7e7e7e;
+}
   &--number {
     border-radius: 50%;
     color: white;
