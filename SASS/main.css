@@ -412,14 +412,9 @@ a {
   .functioning__list {
     flex-direction: row;
     justify-content: space-between;
+    width: 1060px;
   }
 }
-@media all and (min-width: 768px) {
-  .functioning__list {
-    max-width: 500px;
-  }
-}
-
 .functioning__step {
   display: flex;
   align-items: baseline;
@@ -515,7 +510,6 @@ nav img {
   background-color: #f0f0f0;
   border-radius: 25px 25px 0px 0px;
   padding: 2% 5% 5% 5%;
-  z-index: 0;
 }
 @media all and (min-width: 1024px) {
   .slight {
@@ -564,7 +558,6 @@ nav img {
 }
 @media all and (min-width: 768px) {
   .slight__container {
-    width: 65%;
     padding: 25px 120px 25px 120px;
   }
 }
