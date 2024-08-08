@@ -91,6 +91,11 @@
     justify-content: space-between;
   }
 }
+@media all and (min-width: 768px) {
+  .functioning__list {
+    max-width: 500px;
+  }
+}
 
 .functioning__step {
   display: flex;
