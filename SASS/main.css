@@ -54,12 +54,10 @@ a {
   background-color: #f2f2f2;
   margin-top: 40px;
   padding: 5px;
-  width: 96%;
 }
 @media all and (min-width: 1024px) {
   .restaurants {
     padding: 30px 0px;
-    width: 100%;
   }
   .restaurants h2 {
     margin-left: 65px;
@@ -206,7 +204,6 @@ a {
 .footer {
   padding: 22px 20px;
   background-color: #353535;
-  width: 89%;
 }
 @media all and (min-width: 768px) {
   .footer {
@@ -214,7 +211,6 @@ a {
     align-items: center;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    height: 114px;
     gap: 16px;
   }
 }
@@ -223,7 +219,6 @@ a {
     flex-flow: row-reverse;
     align-items: baseline;
     gap: 90px;
-    width: 97%;
   }
 }
 .footer h2 {
@@ -352,7 +347,6 @@ a {
   padding: 20px 0;
   background-color: whitesmoke;
   text-align: center;
-  width: 100%;
 }
 @media all and (min-width: 1024px) {
   .hero {
