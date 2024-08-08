@@ -71,6 +71,14 @@ a {
     margin: 50px 80px 0px 80px;
   }
 }
+@media all and (min-width: 768px) {
+  .restaurants_list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .restaurants_card {
   position: relative;
   width: 100%;
@@ -86,6 +94,11 @@ a {
 @media all and (min-width: 1024px) {
   .restaurants_card {
     width: 40%;
+  }
+}
+@media all and (min-width: 768px) {
+  .restaurants_card {
+    width: 45%;
   }
 }
 .restaurants_card:hover {
@@ -208,9 +221,8 @@ a {
 @media all and (min-width: 768px) {
   .footer {
     display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+    flex-flow: row-reverse;
+    align-items: baseline;
     gap: 16px;
   }
 }
@@ -246,10 +258,22 @@ a {
     gap: 30px;
   }
 }
+@media all and (min-width: 768px) {
+  .footer ul {
+    flex-flow: row-reverse;
+    display: flex;
+    align-items: center;
+  }
+}
 .footer li {
   color: white;
   list-style: none;
   padding-bottom: 5px;
+}
+@media all and (min-width: 768px) {
+  .footer li {
+    padding-right: 10px;
+  }
 }
 .footer_logo {
   margin: 0 0 16px 0;
@@ -389,6 +413,11 @@ a {
   .functioning__list {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media all and (min-width: 768px) {
+  .functioning__list {
+    max-width: 500px;
   }
 }
 
@@ -604,7 +633,7 @@ nav img {
   flex: 1;
   justify-content: space-between;
   width: 100%;
-  margin: 2%;
+  padding: 10px;
   gap: 2%;
   white-space: nowrap;
   overflow: hidden;
@@ -638,7 +667,7 @@ nav img {
   align-self: flex-end;
   font-family: "roboto";
   font-weight: 500;
-  padding: 15px;
+  padding: 0 15px 20px 0;
 }
 .race-cards__price p {
   margin: 0;
