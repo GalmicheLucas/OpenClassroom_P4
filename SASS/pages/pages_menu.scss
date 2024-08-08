@@ -93,6 +93,10 @@ nav {
   font-size: 28px;
   font-weight: 400;
 }
+
+.menu{
+  
+}
 .slight {
   position: relative;
   background-color: darken($white, 6%);
@@ -105,6 +109,8 @@ nav {
     margin: auto;
   }
 
+  
+  
   &__heading {
     display: flex;
     align-items: center;
@@ -143,7 +149,10 @@ nav {
   }
 
   &__container {
-    @include table__responsive;
+    @media all and (min-width:768px){
+      width: 65%;
+      padding: 25px 120px 25px 120px;
+    };
     @include desktop__responsive {
       display: flex;
       flex-direction: column;
@@ -329,28 +338,14 @@ nav {
 
 .menu-button {
   padding: 40px;
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 15px 45px 15px 45px;
 }
-.menu-footer {
-  padding: 22px 25px;
-  background-color: #353535;
 
-  h2 {
-    font-family: shrikhand;
-    font-weight: lighter;
-    color: white;
-    font-size: 18px;
-  }
-
-  li {
-    color: white;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  i {
-    margin-right: 10px;
-  }
 }
+
