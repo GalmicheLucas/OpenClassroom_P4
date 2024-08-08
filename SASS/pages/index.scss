@@ -113,6 +113,9 @@ $breakpoints: (
       flex-direction: row;
       justify-content: space-between;
     }
+    @media all and (min-width: 768px) {
+      max-width: 500px;
+    }
   }
 }
 
@@ -136,9 +139,9 @@ $breakpoints: (
       color: #9356dc;
     }
   }
-.fa-solid{
-  color: #7e7e7e;
-}
+  .fa-solid {
+    color: #7e7e7e;
+  }
   &--number {
     border-radius: 50%;
     color: white;
