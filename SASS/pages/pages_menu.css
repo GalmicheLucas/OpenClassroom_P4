@@ -169,7 +169,7 @@ nav img {
   flex: 1;
   justify-content: space-between;
   width: 100%;
-  margin: 2%;
+  padding: 10px;
   gap: 2%;
   white-space: nowrap;
   overflow: hidden;
@@ -203,7 +203,7 @@ nav img {
   align-self: flex-end;
   font-family: "roboto";
   font-weight: 500;
-  padding: 15px;
+  padding: 0 15px 20px 0;
 }
 .race-cards__price p {
   margin: 0;
