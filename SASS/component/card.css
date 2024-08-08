@@ -19,6 +19,14 @@
     margin: 50px 80px 0px 80px;
   }
 }
+@media all and (min-width: 768px) {
+  .restaurants_list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .restaurants_card {
   position: relative;
   width: 100%;
@@ -34,6 +42,11 @@
 @media all and (min-width: 1024px) {
   .restaurants_card {
     width: 40%;
+  }
+}
+@media all and (min-width: 768px) {
+  .restaurants_card {
+    width: 45%;
   }
 }
 .restaurants_card:hover {
