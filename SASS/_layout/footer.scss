@@ -2,13 +2,10 @@
   padding: 22px 20px;
   background-color: #353535;
 
-
   @media all and (min-width: 768px) {
     display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-
+    flex-flow: row-reverse;
+    align-items: baseline;
     gap: 16px;
   }
 
@@ -16,7 +13,6 @@
     flex-flow: row-reverse;
     align-items: baseline;
     gap: 90px;
-  
   }
   h2 {
     font-family: shrikhand;
@@ -42,7 +38,11 @@
       display: flex;
       align-items: center;
       gap: 30px;
-      
+    }
+    @media all and (min-width: 768px) {
+      flex-flow: row-reverse;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -50,6 +50,9 @@
     color: white;
     list-style: none;
     padding-bottom: 5px;
+    @media all and (min-width: 768px){
+      padding-right: 10px;
+    }
   }
 
   &_logo {
