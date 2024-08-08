@@ -112,9 +112,10 @@ $breakpoints: (
     @media all and (min-width: 1024px) {
       flex-direction: row;
       justify-content: space-between;
+      width: 1060px;
     }
     @media all and (min-width: 768px) {
-      max-width: 500px;
+  
     }
   }
 }
