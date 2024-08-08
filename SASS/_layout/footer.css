@@ -5,9 +5,8 @@
 @media all and (min-width: 768px) {
   .footer {
     display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+    flex-flow: row-reverse;
+    align-items: baseline;
     gap: 16px;
   }
 }
@@ -43,10 +42,22 @@
     gap: 30px;
   }
 }
+@media all and (min-width: 768px) {
+  .footer ul {
+    flex-flow: row-reverse;
+    display: flex;
+    align-items: center;
+  }
+}
 .footer li {
   color: white;
   list-style: none;
   padding-bottom: 5px;
+}
+@media all and (min-width: 768px) {
+  .footer li {
+    padding-right: 10px;
+  }
 }
 .footer_logo {
   margin: 0 0 16px 0;
