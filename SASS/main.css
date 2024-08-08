@@ -23,19 +23,18 @@ a {
 /**** title d'en tête ****/
 .button {
   display: block;
-  padding: 16px 25px;
   border-radius: 25px;
   font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  color: #FFFFFF;
   text-align: center;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: #FFFFFF;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: background 300ms, box-shadow 300ms;
   margin: 25px;
+  padding: 15px 35px 15px 35px;
 }
 .button:hover {
   opacity: 0.88;
@@ -563,6 +562,12 @@ nav img {
     width: 95%;
   }
 }
+@media all and (min-width: 768px) {
+  .slight__container {
+    width: 65%;
+    padding: 25px 120px 25px 120px;
+  }
+}
 @media all and (min-width: 1024px) {
   .slight__container {
     display: flex;
@@ -727,26 +732,14 @@ nav img {
 .menu-button {
   padding: 40px;
 }
-
-.menu-footer {
-  padding: 22px 25px;
-  background-color: #353535;
-}
-.menu-footer h2 {
-  font-family: shrikhand;
-  font-weight: lighter;
-  color: white;
-  font-size: 18px;
-}
-.menu-footer li {
-  color: white;
-}
-.menu-footer ul {
-  list-style: none;
-  padding: 0;
-}
-.menu-footer i {
-  margin-right: 10px;
+@media all and (min-width: 768px) {
+  .menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 15px 45px 15px 45px;
+  }
 }
 
 .loading-spinner-container {
