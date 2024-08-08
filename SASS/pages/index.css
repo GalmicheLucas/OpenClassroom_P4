@@ -47,7 +47,6 @@
   padding: 20px 0;
   background-color: whitesmoke;
   text-align: center;
-  width: 100%;
 }
 @media all and (min-width: 1024px) {
   .hero {
