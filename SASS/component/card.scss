@@ -30,6 +30,13 @@ $icon: #7e7e7e;
       justify-content: space-evenly;
       margin: 50px 80px 0px 80px;
     }
+
+    @media all and (min-width: 768px){
+      display: flex;
+      justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
   }
 
   &_card {
@@ -46,6 +53,9 @@ $icon: #7e7e7e;
 
     @media all and (min-width: 1024px) {
       width: 40%;
+    }
+    @media all and (min-width: 768px){
+      width: 45%;
     }
 
     &:hover {
