@@ -48,6 +48,7 @@ nav img {
 }
 
 .slight {
+  width: 100%;
   position: relative;
   background-color: #f0f0f0;
   border-radius: 25px 25px 0px 0px;
@@ -55,8 +56,13 @@ nav img {
 }
 @media all and (min-width: 1024px) {
   .slight {
-    max-width: 1024px;
+    width: 100%;
     margin: auto;
+  }
+}
+@media all and (min-width: 768px) {
+  .slight {
+    width: 75%;
   }
 }
 .slight__heading {
@@ -274,5 +280,12 @@ nav img {
     align-items: center;
     margin: 15px;
     padding: 15px 45px 15px 45px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=pages_menu.css.map */
