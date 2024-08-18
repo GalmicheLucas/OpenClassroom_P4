@@ -407,6 +407,12 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   margin: auto;
+  width: 100%;
+}
+@media all and (min-width: 768px) {
+  .functioning__list {
+    width: 50%;
+  }
 }
 @media all and (min-width: 1024px) {
   .functioning__list {
