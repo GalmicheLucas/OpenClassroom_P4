@@ -34,7 +34,6 @@ $icon: #7e7e7e;
   min-width: 290px;
   height: 290px;
   border-radius: 50%;
-  background: gradient-loader;
   z-index: 0;
   animation: rotate-gradient 3s infinite;
 
@@ -272,8 +271,4 @@ $icon: #7e7e7e;
     $secondary-color,
     transparent,
     transparent
-  );
-
-  /* Loading spinner animation delay */
-  $icons-delay: 610ms;
-}
+  )}
