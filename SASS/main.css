@@ -882,7 +882,6 @@ nav img {
   content: "\f7ec";
   color: #ffffff;
   transform: translateY(-150px);
-  animation: icons-appearing icons-delay 610ms both;
 }
 .loading-spinner__plate__food34 {
   width: 25%;
