@@ -22,11 +22,9 @@
   min-width: 290px;
   height: 290px;
   border-radius: 50%;
-  background: gradient-loader;
   z-index: 0;
   animation: rotate-gradient 3s infinite;
   /* Gradient */
-  /* Loading spinner animation delay */
 }
 .loading-spinner::after {
   z-index: 0;
