@@ -50,7 +50,7 @@
     color: white;
     list-style: none;
     padding-bottom: 5px;
-    @media all and (min-width: 768px){
+    @media all and (min-width: 768px) {
       padding-right: 10px;
     }
   }
@@ -75,31 +75,20 @@
     }
   }
 
-  &__nav {
+  &_icon {
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-weight: 500 map-get;
-    gap: 7px;
+    width: 16px;
+    height: 13px;
+    font-size: 13px;
+  }
 
-    @media all and (min-width: 1024px) {
-      width: 190px;
-    }
-
-    &_icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 16px;
-      height: 13px;
-      font-size: 13px;
-    }
-
-    &--info {
-      @media all and (min-width: 768px) {
-        & p {
-          width: 130px;
-          height: 20px;
-        }
+  &--info {
+    @media all and (min-width: 768px) {
+      & p {
+        width: 130px;
+        height: 20px;
       }
     }
   }
