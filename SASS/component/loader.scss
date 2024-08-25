@@ -158,7 +158,6 @@ $icon: #7e7e7e;
         content: "\f7ec";
         color: $white;
         transform: translateY(-150px);
-        animation: icons-appearing icons-delay 610ms both;
       }
     }
 
@@ -271,4 +270,5 @@ $icon: #7e7e7e;
     $secondary-color,
     transparent,
     transparent
-  )}
+  );
+}
