@@ -287,4 +287,53 @@ nav img {
     display: flex;
     justify-content: center;
   }
+}
+
+/* CSS pour les éléments d'entrée */
+.race-list:nth-child(1) .race-cards {
+  animation: appearEntrance 1.5s ease forwards;
+  opacity: 0;
+}
+
+/* CSS pour les éléments de plat */
+.race-list:nth-child(2) .race-cards {
+  animation: appearPlat 5.5s ease forwards;
+  opacity: 0;
+}
+
+/* CSS pour les éléments de dessert */
+.race-list:nth-child(3) .race-cards {
+  animation: appearDessert 9.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes appearEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes appearPlat {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes appearDessert {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=pages_menu.css.map */
